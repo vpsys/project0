@@ -1,0 +1,106 @@
+$color: white;
+
+div {
+  font-size: 18px;
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 75px;
+  margin-left: 40px;
+  background-color: white;
+
+  p {
+      color: $color;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-right: 150px;
+      background-color: #333;
+  }
+
+  ul {
+      color: $color;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.header {
+  background-color: $color;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: $color;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.topnav a:hover {
+  background-color: $color;
+  color: black;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+%message {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.wash {
+  @extend %message;
+  background-color: lightblue;
+}
+
+.your {
+  @extend %message;
+  background-color: lightskyblue;
+}
+
+.hands {
+  @extend %message;
+  background-color: lightsteelblue;
+}
