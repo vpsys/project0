@@ -6,7 +6,7 @@ Requirements have been met as follows:
 PAGE ONE:
 Bootstrap Jumbotron Component,
 Image,
-Username/Password Placeholder Form,
+Search Placeholder Form,
 Unordered List,
 Hyperlinks,
 Mobile-responsive @media query
